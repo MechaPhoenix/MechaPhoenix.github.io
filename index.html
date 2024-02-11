@@ -10,6 +10,7 @@
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
+      display: flex;
     }
 
     header {
@@ -19,6 +20,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1em;
+      width: 100%;
     }
 
     h1 {
@@ -26,9 +28,33 @@
       margin: 0;
     }
 
+    aside {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      min-width: 200px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
     section {
       max-width: 800px;
-      margin: 20px auto;
+      margin: 20px;
       padding: 20px;
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,10 +71,19 @@
     <h1>7722 Software Docs</h1>
   </header>
 
-  <section>
+  <aside>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <!-- Add more links for other sections as needed -->
+    </nav>
+  </aside>
+
+  <section id="introduction">
     <h2>Introduction</h2>
     <p>Welcome to our software documentation. Here you'll find all the information you need to get started with our amazing software team!</p>
   </section>
+
+  <!-- Add more sections and content as needed -->
 
 </body>
 </html>
